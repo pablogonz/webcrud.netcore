@@ -1,0 +1,49 @@
+﻿@page
+@model webcrud.Pages.Departments.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Deparment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Deparment.Code" class="control-label"></label>
+                <input asp-for="Deparment.Code" class="form-control" />
+                <span asp-validation-for="Deparment.Code" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Deparment.Name" class="control-label"></label>
+                <input asp-for="Deparment.Name" class="form-control" />
+                <span asp-validation-for="Deparment.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Deparment.Description" class="control-label"></label>
+                <input asp-for="Deparment.Description" class="form-control" />
+                <span asp-validation-for="Deparment.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Deparment.Enabled" /> @Html.DisplayNameFor(model => model.Deparment.Enabled)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BO", "BO\BO.csproj", "{F5462F3E-A1EC-42A2-87BE-D5DA1A1ED972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webcrud", "webcrud\webcrud.csproj", "{952BA79A-E019-4CD3-A138-E45AC051EC21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5462F3E-A1EC-42A2-87BE-D5DA1A1ED972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5462F3E-A1EC-42A2-87BE-D5DA1A1ED972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5462F3E-A1EC-42A2-87BE-D5DA1A1ED972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5462F3E-A1EC-42A2-87BE-D5DA1A1ED972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{952BA79A-E019-4CD3-A138-E45AC051EC21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{952BA79A-E019-4CD3-A138-E45AC051EC21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{952BA79A-E019-4CD3-A138-E45AC051EC21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{952BA79A-E019-4CD3-A138-E45AC051EC21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E013B341-F195-48D9-AAF5-F34E9B734A99}
+	EndGlobalSection
+EndGlobal

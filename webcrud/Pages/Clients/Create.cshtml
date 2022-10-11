@@ -1,0 +1,44 @@
+﻿@page
+@model webcrud.Pages.Clients.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>ClientType</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ClientType.Name" class="control-label"></label>
+                <input asp-for="ClientType.Name" class="form-control" />
+                <span asp-validation-for="ClientType.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClientType.Description" class="control-label"></label>
+                <input asp-for="ClientType.Description" class="form-control" />
+                <span asp-validation-for="ClientType.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="ClientType.Enabled" /> @Html.DisplayNameFor(model => model.ClientType.Enabled)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
